@@ -8,3 +8,7 @@ class Blog(models.Model):
     qoutes_author = models.CharField(max_length=100)
     content = models.TextField()        
     date = models.DateField()
+
+    def __str__(self):
+        return self.mainHeading
+    
